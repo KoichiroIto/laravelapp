@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\Kadai2Controller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('hello', [HelloController::class, 'index']);
-
 Route::post('hello',[HelloController::class, 'post']);
+
+Route::get('kadai2', [Kadai2Controller::class, 'index']);
+Route::post('kadai2',[Kadai2Controller::class, 'jyanken']);
